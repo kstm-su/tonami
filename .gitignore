@@ -39,3 +39,6 @@ jspm_packages
 # Vim swap file
 .*.swp
 .*.swo
+
+# Compiled script
+bundle.js
