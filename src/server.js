@@ -1,4 +1,3 @@
-import path from 'path';
 import express from 'express';
 import logger from 'morgan';
 import {MongoClient} from 'mongodb';
@@ -6,7 +5,7 @@ import {MongoClient} from 'mongodb';
 /* initialize app server */
 const app = express();
 app.use(logger('dev'));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 /* connect mongodb server*/
 var db;
